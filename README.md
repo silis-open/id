@@ -3,7 +3,7 @@
 #### 介绍
 分布式Id
 
-#### Javascript
+#### JS
 ```
 var id = Id.GenerateString();
 console.log(id);
