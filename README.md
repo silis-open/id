@@ -5,5 +5,9 @@
 
 #### 使用说明
 
+
+```
 var id = Id.GenerateString();
 console.log(id);
+```
+
