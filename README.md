@@ -5,8 +5,16 @@
 
 #### JS
 ```
-var id = Id.GenerateString();
-console.log(id);
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var id = Id.GenerateString();
+            document.write(id);
+        </script>
+    </body>
+</html>
 ```
 
 #### C#
