@@ -7,6 +7,7 @@
 ```
 <html>
     <head>
+        <script src="id.min.js"></script>
     </head>
     <body>
         <script>
@@ -20,6 +21,7 @@
 #### C#
 
 ```
+using App;
 using System;
 
 namespace App.Test
