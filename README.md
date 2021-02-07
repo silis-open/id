@@ -20,7 +20,8 @@ namespace App.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Id.GenerateString());            
+            var id = Id.GenerateString();
+            Console.WriteLine(id);
         }
     }
 }
