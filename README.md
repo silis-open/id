@@ -4,7 +4,7 @@
 分布式Id
 
 #### JS版本示例
-依赖模块：id.min.js
+
 ```
 <html>
     <head>
@@ -18,9 +18,9 @@
     </body>
 </html>
 ```
+> 依赖模块：id.min.js
 
 #### C#版本示例
-依赖模块：id.cs
 
 ```
 using App;
@@ -39,12 +39,13 @@ namespace App.Test
 }
 
 ```
+> 依赖模块：id.cs
 
 #### Sql Server版本示例
-依赖模块：id.ms.sql
 
 ```
 SELECT dbo.Id_GenerateChar(RAND())
 ```
+> 依赖模块：id.ms.sql
 > 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
