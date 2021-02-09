@@ -53,6 +53,6 @@ namespace App.Test
 > 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
 ```
-SELECT dbo.Id_GenerateChar(RAND())
+SELECT dbo.ID_GENERATECHAR(RANK())
 ```
 
