@@ -50,9 +50,10 @@ namespace App.Test
 #### Sql Server版本示例
 
 > 依赖模块：id.ms.sql<br>
-> 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
 ```
 SELECT dbo.ID_GENERATECHAR(RANK())
 ```
+
+> 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
