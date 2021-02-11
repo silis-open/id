@@ -1,15 +1,10 @@
-# id
-
 #### 介绍
-分布式Id，指在不同地方生成的Id基本能保证唯一，这样就不需要在集中在一个服务器上管理Id的生成。<br>
-> 1个Id = 12个字节<br>
+分布式Id，指在不同地方生成的Id基本能保证唯一，这样就不需要集中在一个服务器上管理Id的生成。<br>
 > 1个字节 = 8个bit<br>
 > 1个字符 = 4个bit<br>
-> 1个Id = 24个字符
+> 1个Id = 12个字节 = 24个字符 = char(24)
 
 #### JS版本示例
-
-> 依赖模块：id.min.js
 
 ```
 <html>
@@ -26,8 +21,7 @@
 ```
 
 #### C#版本示例
-
-> 依赖模块：id.cs
+生成字符串类型的id
 
 ```
 using App;
@@ -47,13 +41,35 @@ namespace App.Test
 
 ```
 
+---
+
+new一个带实体泛型的id对象
+
+```
+using App;
+using System;
+
+namespace App.Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var id = new Id<MyEntity>;
+            Console.WriteLine(id.toString());
+        }
+    }
+}
+
+```
+> id实现实体泛型，使得在编写代码时，减少出现Id赋值错误的可能性，理解id属于哪个实体的id有利于代码更容易阅读。
+
 #### Sql Server版本示例
 
-> 依赖模块：id.ms.sql<br>
-
 ```
-SELECT dbo.ID_GENERATECHAR(RANK())
+SELECT dbo.ID_GENERATECHAR(RAND())
 ```
-
 > 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
+#### 关于带泛型的id对象
+不支持泛型的语言，就不实现id对象的方式生成id
