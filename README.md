@@ -13,7 +13,7 @@
     </head>
     <body>
         <script>
-            var id = Id.GenerateString();
+            var id = Id.generateString();
             document.write(id);
         </script>
     </body>
