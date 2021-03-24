@@ -1,3 +1,5 @@
+--(c)http://gitee.com/silis-open/Disid
+
 DROP FUNCTION [dbo].[Id_GenerateChar]
 GO
 
