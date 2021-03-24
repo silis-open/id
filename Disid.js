@@ -1,3 +1,5 @@
+/*(c)http://gitee.com/silis-open/Disid*/
+
 (function(win){
 
     if(win.top.Id) return win.top.Id;
