@@ -57,22 +57,15 @@ char* Id_generateString()
 	Id_random = Id_random + rand();
 	bytes[12] = (int)(unsigned char)(Id_random);
 	
-	char chars[] = "000000000000000000000000";
+	//转换16进制
+	char * chars = (char *)malloc(25); //分配内存
 	for(int i = 0; i < 12; i++){
 	    char b = bytes[i];
 	    chars[i*2] = HEX_CHARS[b >> 4 & 0xF];
 	    chars[i*2+1] = HEX_CHARS[b & 0xF];
 	}
 	
-	printf("%s\n", chars);
+	chars[24] = (char)0;
 	
 	return chars;
-}
-
-int main()
-{
-   /* 我的第一个 C 程序 */
-   printf("%s", Id_generateString());
-   
-   return 0;
 }
