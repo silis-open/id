@@ -1,3 +1,5 @@
+/*(c)http://gitee.com/silis/id*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
