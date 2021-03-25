@@ -102,7 +102,6 @@ SELECT dbo.ID_GENERATECHAR(RAND())
 
 int main()
 {
-   /* 我的第一个 C 程序 */
    char* id = Id_generateString();
    printf("%s", id);
    free(id); //需要释放内存
