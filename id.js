@@ -1,4 +1,4 @@
-/*(c)http://gitee.com/silis-open/id*/
+/*(c)http://gitee.com/silis/id*/
 
 (function(win){
 

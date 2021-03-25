@@ -1,4 +1,4 @@
---(c)http://gitee.com/silis-open/id
+--(c)http://gitee.com/silis/id
 
 DROP FUNCTION [dbo].[Id_GenerateChar]
 GO

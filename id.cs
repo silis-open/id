@@ -12,7 +12,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-/*(c)http://gitee.com/silis-open/id*/
+/*(c)http://gitee.com/silis/id*/
 
 using App.Utils;
 using System;
