@@ -4,7 +4,7 @@
 
     if(win.top.Id) return win.top.Id;
 	
-	var increaseNum; //自增数
+	var increaseNum, //自增数
 		random = Math.random(); //初始化的随机数
 
 	win.Id = function(){};
