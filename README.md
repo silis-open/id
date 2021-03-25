@@ -71,6 +71,23 @@ namespace App.Test
 
 ```
 
+### Java版本示例
+
+```
+package app.test;
+import app.Id;
+
+public class Program
+{
+    public static void main(String []args)
+    {
+        String id = Id.generateString();
+        System.out.println(id);
+    }
+}
+```
+
+
 ### Sql Server版本示例
 
 ```
