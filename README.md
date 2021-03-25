@@ -95,6 +95,25 @@ SELECT dbo.ID_GENERATECHAR(RAND())
 ```
 > 由于自定义函数内不允许生成随机数（RAND），需要在调用方通过参数传入
 
+### C语言示例
+
+```
+#include "id.c"
+
+int main()
+{
+   /* 我的第一个 C 程序 */
+   char* id = Id_generateString();
+   printf("%s", id);
+   free(id); //需要释放内存
+   
+   return 0;
+}
+```
+
+> 注意C语言版本，需要在调用完后主动释放id的内存
+
+
 ### 关于id对象带泛型的好处：
 
 - 理解id属于哪个实体的id有利于代码更容易阅读，即提高代码可读性。
